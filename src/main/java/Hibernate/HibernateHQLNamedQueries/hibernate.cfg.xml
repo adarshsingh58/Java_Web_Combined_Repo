@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<!-- Assume world is the database name -->
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/testHibernate</property>
+		<property name="hibernate.connection.username">admin</property>
+		<property name="hibernate.connection.password">admin</property>
+		
+		<!-- <property name="hibernate.id.new_generator_mappings">false</property> -->
+		<property name="hibernate.hbm2ddl.auto"><!-- update -->create</property>
+		
+		<!-- See the query running in console -->
+		<property name="show_sql">true</property>
+
+		<!-- List of XML mapping files. Both of below is mandatory -->
+		<mapping resource="/hibernate.cfg.xml" />	<!--This defines the config file we need. This file must be under src folder or main/java folder -->
+		<mapping class="onilne.mrwallet.www.Entity.PersonEntity" /> <!-- This defines the All the etities we are using in hibernate -->
+
+	</session-factory>
+</hibernate-configuration>
