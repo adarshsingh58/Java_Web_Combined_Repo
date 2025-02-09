@@ -1,3 +1,4 @@
+/*
 package Spring.SpringMVCwithInterceptor.src.com.accenture.interceptoes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,3 +21,4 @@ public class MVCInterceptors extends HandlerInterceptorAdapter{
 	}
 
 }
+*/
