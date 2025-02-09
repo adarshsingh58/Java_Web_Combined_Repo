@@ -1,15 +1,9 @@
-package serialization.SerilizationDeserializationMultipleObject.www.Main;
+package serialization.SerilizationDeserializationMultipleObject;
 
-import serialization.SerilizationDeserializationMultipleObject.www.Beans.Animal;
-import serialization.SerilizationDeserializationMultipleObject.www.Beans.Person;
+import serialization.Beans.Animal;
+import serialization.Beans.Person;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 
 public class Main {

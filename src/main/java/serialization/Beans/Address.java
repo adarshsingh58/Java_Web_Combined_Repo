@@ -1,4 +1,4 @@
-package serialization.SerilizationDeserializationObjectGraph.www.Beans;
+package serialization.Beans;
 
 import java.io.Serializable;
 

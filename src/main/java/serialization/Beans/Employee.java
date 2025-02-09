@@ -1,4 +1,6 @@
-package serialization.SerilizationDeserializationInheritanceSuperNotSERChildSER.www.Beans;
+package serialization.Beans;
+
+import serialization.SerilizationDeserializationInheritanceSuperNotSERChildSER.www.Beans.Person;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
-package serialization.SerilizationDeserializationCustomSerialization.www.Main;
+package serialization.SerilizationDeserializationInheritanceSuperNotSERChildSER;
 
-import serialization.SerilizationDeserializationCustomSerialization.www.Beans.Person;
+import serialization.Beans.Employee;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,11 +31,13 @@ public class Main {
 		/*Read the object from the file. The return type is always Object, we wil have to case it into the object that was stored.
 		 * Which also eans that we must know prehand what object type was serialized before deserialization  */
 		Object object=objectInputStream.readObject();
-		Person person=(Person)object;
+		Employee employee=(Employee)object;
 		
-		System.out.println("Age:"+person.getAge());
-		System.out.println("Name:"+person.getName());
-		System.out.println("Password:"+person.getPassword());
+		System.out.println("Age:"+employee.getAge());
+		System.out.println("Name:"+employee.getName());
+		System.out.println("Password:"+employee.getPassword());
+		System.out.println("Department:"+employee.getDepartment());
+		System.out.println("EmpId:"+employee.getEmpId());
 		
 		/*Close all Streams */
 		objectInputStream.close();
@@ -44,10 +46,13 @@ public class Main {
 
 	private static void serializePerson() throws FileNotFoundException, IOException {
 		/*Creating object of class to serialize and some data to it*/
-		Person person=new Person();
-		person.setName("Adarsh");
-		person.setAge(24);
-		person.setPassword("password");
+		Employee employee=new Employee();
+		employee.setAge(24);
+		employee.setDepartment("CS");
+		employee.setEmpId(1);
+		employee.setName("Adarsh");
+		employee.setPassword("password");
+		
 		
 		/*Now we will open a FileOutputStream passing in the File where objct will be saved */
 		FileOutputStream fileOutputStream=new FileOutputStream(new File("serializedFile.txt"));
@@ -57,7 +62,7 @@ public class Main {
 		ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
 		
 		/*Now write the object to save/serialize into objectOutputStream */
-		objectOutputStream.writeObject(person);
+		objectOutputStream.writeObject(employee);
 		
 		/*close all streams */
 		objectOutputStream.close();

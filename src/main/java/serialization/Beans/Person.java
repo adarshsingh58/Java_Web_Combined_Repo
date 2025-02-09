@@ -1,4 +1,4 @@
-package serialization.SerilizationDeserializationWithStaticTransient.www.Beans;
+package serialization.Beans;
 
 import java.io.Serializable;
 
@@ -7,6 +7,7 @@ public class Person implements Serializable{
 	private String name;
 	private int age;
 	private String password;
+	private Address address;
 	
 	public String getName() {
 		return name;
@@ -26,5 +27,12 @@ public class Person implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 }

@@ -1,14 +1,8 @@
-package serialization.SerilizationDeserializationWithStaticTransient.www.Main;
+package serialization.SerilizationDeserializationWithFinalTransient;
 
-import serialization.SerilizationDeserializationWithStaticTransient.www.Beans.Person;
+import serialization.Beans.Person;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 
 public class Main {
@@ -47,7 +41,6 @@ public class Main {
 		Person person=new Person();
 		person.setName("Adarsh");
 		person.setAge(24);
-		person.setPassword("password");
 		
 		/*Now we will open a FileOutputStream passing in the File where objct will be saved */
 		FileOutputStream fileOutputStream=new FileOutputStream(new File("serializedFile.txt"));

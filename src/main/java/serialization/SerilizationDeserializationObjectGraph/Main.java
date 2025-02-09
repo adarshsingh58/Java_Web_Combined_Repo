@@ -1,15 +1,9 @@
-package serialization.SerilizationDeserializationObjectGraph.www.Main;
+package serialization.SerilizationDeserializationObjectGraph;
 
-import serialization.SerilizationDeserializationObjectGraph.www.Beans.Address;
-import serialization.SerilizationDeserializationObjectGraph.www.Beans.Person;
+import serialization.Beans.Address;
+import serialization.Beans.Person;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 
 public class Main {

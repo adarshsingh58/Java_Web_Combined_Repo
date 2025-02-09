@@ -1,4 +1,4 @@
-package serialization.SerilizationDeserializationMultipleObject.www.Beans;
+package serialization.Beans;
 
 import java.io.Serializable;
 

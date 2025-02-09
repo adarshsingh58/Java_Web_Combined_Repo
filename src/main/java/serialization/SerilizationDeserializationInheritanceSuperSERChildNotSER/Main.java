@@ -1,6 +1,6 @@
-package serialization.SerilizationDeserializationInheritanceSuperSERChildNotSER.www.Main;
+package serialization.SerilizationDeserializationInheritanceSuperSERChildNotSER;
 
-import serialization.SerilizationDeserializationInheritanceSuperNotSERChildSER.www.Beans.Employee;
+import serialization.Beans.Employee;
 
 import java.io.File;
 import java.io.FileInputStream;
