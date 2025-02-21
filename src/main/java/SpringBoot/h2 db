@@ -1,0 +1,11 @@
+install h2 db using brew
+- brew install h2
+
+run h2 db using below command
+- brew services start h2
+
+access db at:
+- http://localhost:8082/
+
+stop server with:
+-  brew services stop h2

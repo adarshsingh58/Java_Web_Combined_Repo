@@ -1,4 +1,4 @@
-package InnerClass.NormalInnerClass.www.CallFromNonStaticMethod;
+package InnerClass.NormalInnerClass.CallFromNonStaticMethod;
 
 public class OtherClass {
 

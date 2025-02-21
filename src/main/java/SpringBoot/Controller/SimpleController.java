@@ -1,16 +1,18 @@
 package SpringBoot.Controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import SpringBoot.service.SimpleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class SimpleController {
-    String appName="hello";
+    @Autowired
+    SimpleService simpleService;
 
-    @GetMapping("/")
-    public String homePage(Model model) {
-        model.addAttribute("appName", appName);
-        return "home";
+    @GetMapping("/getName")
+    public String homePage() {
+        return simpleService.homePage();
     }
+
 }

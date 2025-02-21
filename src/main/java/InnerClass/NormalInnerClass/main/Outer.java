@@ -1,8 +1,6 @@
-package InnerClass.NormalInnerClass.www.main.CallingDifferentLeelVarFromInnerClass;
+package InnerClass.NormalInnerClass.main;
 
 public class Outer {
-	
-	int a=5;
 	
 	public static void main(String[] args) {
 		Outer outer=new Outer();
@@ -14,7 +12,7 @@ public class Outer {
 		
 		public void hello()
 		{
-			System.out.println("Hello. Var a="+a);
+			System.out.println("Hello, I am Inner Class");
 		}
 	}
 

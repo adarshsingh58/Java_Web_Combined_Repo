@@ -1,4 +1,4 @@
-package InnerClass.NestedClassesAndInterface.www.InterfaceInsideInterface;
+package InnerClass.NestedClassesAndInterface.InterfaceInsideInterface;
 
 public interface OuterInterface 
 {

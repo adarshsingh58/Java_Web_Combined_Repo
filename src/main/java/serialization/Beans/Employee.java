@@ -1,7 +1,5 @@
 package serialization.Beans;
 
-import serialization.SerilizationDeserializationInheritanceSuperNotSERChildSER.www.Beans.Person;
-
 import java.io.Serializable;
 
 /*When Super class is not extending Serializable child class then we must call a no arg constructor of super class */

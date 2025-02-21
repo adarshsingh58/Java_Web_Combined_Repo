@@ -1,10 +1,14 @@
-package InnerClass.NormalInnerClass.www.main;
+package InnerClass.NormalInnerClass.CallInnerClassFromOtherClass;
 
 public class Outer {
 	
 	public static void main(String[] args) {
 		Outer outer=new Outer();
-		Outer.Inner inner=outer.new Inner();
+		outer.callInnerToSayHello();
+	}
+	public void callInnerToSayHello()
+	{
+		Inner inner=new Inner();
 		inner.hello();
 	}
 	

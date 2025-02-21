@@ -1,4 +1,4 @@
-package InnerClass.NestedClassesAndInterface.www.ClassInsideInterface;
+package InnerClass.NestedClassesAndInterface.ClassInsideInterface;
 
 public class ClassInsideInterfaceImpl implements ClassInsideInterface{
 

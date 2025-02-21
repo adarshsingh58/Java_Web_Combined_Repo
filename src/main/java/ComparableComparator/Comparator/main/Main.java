@@ -48,14 +48,7 @@ public class Main {
 			System.out.println("Name :"+person.getFirstName());
 		}
 		
-		Collections.sort(list, new Comparator<Person>() {
-
-			@Override
-			public int compare(Person o1, Person o2) {
-				return o1.getFirstName().compareTo(o2.getFirstName());
-			}
-			
-		});
+		Collections.sort(list, (o1,o2)->  o1.getFirstName().compareTo(o2.getFirstName()));
 		
 		System.out.println("After Sort");
 		for(Person person:list)

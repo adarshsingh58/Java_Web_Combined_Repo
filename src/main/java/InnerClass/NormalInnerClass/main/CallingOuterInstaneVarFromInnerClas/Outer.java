@@ -1,4 +1,4 @@
-package InnerClass.NormalInnerClass.www.main.CallingOuterInstaneVarFromInnerClas;
+package InnerClass.NormalInnerClass.main.CallingOuterInstaneVarFromInnerClas;
 
 public class Outer {
 	

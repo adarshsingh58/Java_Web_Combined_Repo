@@ -12,13 +12,14 @@
 
 
         <!--HIBERNATE-->
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-        <!--<dependency>
-            <groupId>org.hibernate</groupId>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>6.4.10.Final</version>
-            <type>pom</type>
-        </dependency>-->
+            <version>7.0.0.Beta3</version>
+        </dependency>
+
+
         <!--HIBERNATE END-->
 
         <!-- REST MODULE -->
@@ -143,8 +144,23 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <version>3.0.1</version>
         </dependency>
+        <!-- H2 DB -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.2.220</version>
+        </dependency>
+
 
         <!--END SPRING BOOT-->
+
+        <!--GEMINI-->
+        <dependency>
+            <groupId>com.google.genai</groupId>
+            <artifactId>google-genai</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <!--END GEMINI-->
 
     </dependencies>
     <properties>
