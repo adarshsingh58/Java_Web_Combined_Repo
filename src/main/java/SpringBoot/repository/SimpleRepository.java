@@ -5,7 +5,6 @@ import SpringBoot.util.ConnectionPool;
 import SpringBoot.util.HibernateUtil;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
