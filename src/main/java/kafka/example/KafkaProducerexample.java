@@ -11,7 +11,6 @@ public class KafkaProducerexample {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 //        syncProducer();
-
         asyncProducer();
     }
 
