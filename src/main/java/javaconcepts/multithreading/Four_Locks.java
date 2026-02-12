@@ -6,9 +6,11 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.IntStream;
+
 /**
- * Synchronized vs Reentrant vs ReentrantReadWrite vs ReentractConditionalLock vs Semaphores 
- * */
+ * Synchronized vs Reentrant vs ReentrantReadWrite vs ReentractConditionalLock vs Semaphores
+ *
+ */
 public class Four_Locks {
     public static void main(String[] args) {
         Four_Locks instance = new Four_Locks();
@@ -27,6 +29,13 @@ public class Four_Locks {
         new Thread(() -> instance.accessResource_RWLock()).start();
     }
 
+    /*
+     * The synchronized keyword in Java is also a reentrant lock.
+     * In the context of multithreading, reentrancy means that if a thread already holds a lock, it can acquire that same
+     * lock again without blocking itself. How it works with synchronized
+     * If a thread enters a synchronized method, it "owns" the monitor of that object. If that method then calls another
+     * synchronized method on the same object, the thread is allowed to enter because it already owns the lock.
+     * */
     private ReentrantLock reLock = new ReentrantLock();
 
     private void accessResourceSync() {
@@ -94,10 +103,10 @@ public class Four_Locks {
         IntStream.of(100).forEach(i -> {
             service.execute(() -> {
                 //some processing
-            semaphore.acquireUninterruptibly();
-            // Slow IO calls or restricted calls
-            semaphore.release();
-            //other processing
+                semaphore.acquireUninterruptibly();
+                // Slow IO calls or restricted calls
+                semaphore.release();
+                //other processing
             });
         });
     }

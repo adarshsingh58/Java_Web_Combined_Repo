@@ -10,10 +10,10 @@ public class Five_LatchBarrierAndPhaser {
 
 
     /*
-     * A CountDownLatch is like a threadsafe integer which keep tracks of certain number of occurences which is the initialzed number in latch.
-     * In this code a latch of size 2 is initialized and 3 Tasks are given that latch. the tasks are then sent to exec service where one of 5
+     * A CountDownLatch is like a threadsafe integer which keep tracks of certain number of occurrences which is the initialized number in latch.
+     * In this code a latch of size 2 is initialized and 3 Tasks are scheduled in thread sharing the latch. the tasks are then sent to exec service where one of 5
      * threads will be assigned to each runnable task(dependent service). now the idea is that main thread wants to proceed only when certain actions
-     * are gaurenteed taken/completed in all/some tasks. So in those tasks we pass the countdown latch and when those task completes the expected action,
+     * are guaranteed taken/completed in all/some tasks. So in those tasks we pass the countdown latch and when those task completes the expected action,
      * they do countdown on the latch number i.e. sends signal to latch.await. This does not stop any operation on the runnable task itself, the
      * normal operation of the task in thread continues. In Main thread we have latch.await(). here the flow will pause until the latch.await received
      * number of signals equal to the init size of the latch.
@@ -22,7 +22,7 @@ public class Five_LatchBarrierAndPhaser {
      * resume the processing, it doesnt have to wait for all the tasks to signal latch countdown. Also, this way latch is tied to events not tasks or threads.
      * i.e. if in a single tasks we do latch.countdown() 30 times, it will signal await 30 times and main processing will resume. It doesnt have to come from diff
      * tasks. latch.await() just cares about the signal from latch.countdown(), it do not care about who has sent this how many times.
-     * You can think of this task as some connections. only when all the task have succesfully connected to DB, one to Cloud service and other with say an encryption
+     * You can think of this task as some connections. only when all the task have successfully connected to DB, one to Cloud service and other with say an encryption
      * vault, then only main thread can be assured that the next steps which needs all these things can be continued.
      * This is diff from join because in Join main thread will wait for all the threads to finish the task, there join is done on thread. In our case,
      * we have a threadpool, so we added a latch on the task irrespective of the thread it gets assigned to. Also Join will wait for the entire thread to finish the task,
