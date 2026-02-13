@@ -1,4 +1,4 @@
-package kafka.example;
+package communicationModel.EventDriven.kafka.example;
 
 import org.apache.kafka.clients.producer.*;
 

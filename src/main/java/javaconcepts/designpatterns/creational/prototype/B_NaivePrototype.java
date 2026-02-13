@@ -17,6 +17,7 @@ import java.util.Map;
  * 
  * Game engines
  * Clone enemies, bullets, particles
+ */
 public class B_NaivePrototype {
 
     public static void main(String[] args) {

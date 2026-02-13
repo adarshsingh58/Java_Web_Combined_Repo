@@ -164,7 +164,7 @@
 
 
         <!--TEST1 -->
-       <dependency>
+        <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.3</version> <!-- Use the latest version -->
@@ -172,24 +172,24 @@
 
         <!-- Test2 -->
 
-       <!-- <dependency>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>2.3.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>2.3.3</version>
-        </dependency>
-
-        &lt;!&ndash; https://mvnrepository.com/artifact/org.docx4j/docx4j &ndash;&gt;
-        <dependency>
-            <groupId>org.docx4j</groupId>
-            <artifactId>docx4j</artifactId>
-            <version>3.3.5</version>
-        </dependency>-->
+        <!-- <dependency>
+             <groupId>jakarta.xml.bind</groupId>
+             <artifactId>jakarta.xml.bind-api</artifactId>
+             <version>2.3.3</version>
+         </dependency>
+ 
+         <dependency>
+             <groupId>org.glassfish.jaxb</groupId>
+             <artifactId>jaxb-runtime</artifactId>
+             <version>2.3.3</version>
+         </dependency>
+ 
+         &lt;!&ndash; https://mvnrepository.com/artifact/org.docx4j/docx4j &ndash;&gt;
+         <dependency>
+             <groupId>org.docx4j</groupId>
+             <artifactId>docx4j</artifactId>
+             <version>3.3.5</version>
+         </dependency>-->
 
 
         <!--TEST3-->
@@ -244,41 +244,41 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>2.15.3</version>
-    </dependency>
-   <!-- <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.15.3</version>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-        <version>2.15.3</version>
-    </dependency>-->
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.15.3</version>
+        </dependency>
+        <!-- <dependency>
+             <groupId>com.fasterxml.jackson.core</groupId>
+             <artifactId>jackson-databind</artifactId>
+             <version>2.15.3</version>
+         </dependency>
+         <dependency>
+             <groupId>com.fasterxml.jackson.core</groupId>
+             <artifactId>jackson-annotations</artifactId>
+             <version>2.15.3</version>
+         </dependency>-->
         <!--END Spring Security and JWT-->
 
         <!--TEST 4-->
 
-<!--        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-            <version>1.25.0</version>
-        </dependency>
-
-    <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi</artifactId>
-        <version>5.2.3</version> &lt;!&ndash; Use the latest version &ndash;&gt;
-    </dependency>
-        &lt;!&ndash; Add xmlbeans &ndash;&gt;
-        <dependency>
-            <groupId>org.apache.xmlbeans</groupId>
-            <artifactId>xmlbeans</artifactId>
-            <version>5.2.0</version> &lt;!&ndash; Use the latest version &ndash;&gt;
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-compress</artifactId>
+                    <version>1.25.0</version>
+                </dependency>
+        
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>5.2.3</version> &lt;!&ndash; Use the latest version &ndash;&gt;
+            </dependency>
+                &lt;!&ndash; Add xmlbeans &ndash;&gt;
+                <dependency>
+                    <groupId>org.apache.xmlbeans</groupId>
+                    <artifactId>xmlbeans</artifactId>
+                    <version>5.2.0</version> &lt;!&ndash; Use the latest version &ndash;&gt;
+                </dependency>-->
         <dependency>
             <groupId>org.docx4j</groupId>
             <artifactId>docx4j-JAXB-MOXy</artifactId>
@@ -291,11 +291,23 @@
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.13</version> <!-- Use the latest stable version -->
         </dependency>
+
+        <!--WEB SOCKET-->
+
+        <!-- Source: https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-websocket -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>4.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--END WEB SOCKET-->
     </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
 
 </project>

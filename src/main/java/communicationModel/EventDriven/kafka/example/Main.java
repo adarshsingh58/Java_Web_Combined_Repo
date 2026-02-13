@@ -1,4 +1,4 @@
-package kafka.example;
+package communicationModel.EventDriven.kafka.example;
 
 public class Main {
     public static void main(String[] args) {
